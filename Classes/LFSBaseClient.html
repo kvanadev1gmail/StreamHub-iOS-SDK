@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>LFSBaseClient Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.6 (build 789)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -58,6 +57,8 @@
 	
 	<option value="//api/name/initWithNetwork:environment:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithNetwork:environment:</option>
 	
+	<option value="//api/name/postPath:parameters:parameterEncoding:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- postPath:parameters:parameterEncoding:success:failure:</option>
+	
 	<option value="//api/name/postURL:parameters:parameterEncoding:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- postURL:parameters:parameterEncoding:success:failure:</option>
 	
 	<option value="//api/name/requestWithMethod:url:parameters:parameterEncoding:">&nbsp;&nbsp;&nbsp;&nbsp;- requestWithMethod:url:parameters:parameterEncoding:</option>
@@ -106,6 +107,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithNetwork:environment:">initWithNetwork:environment:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postPath:parameters:parameterEncoding:success:failure:">postPath:parameters:parameterEncoding:success:failure:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postURL:parameters:parameterEncoding:success:failure:">postURL:parameters:parameterEncoding:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithMethod:url:parameters:parameterEncoding:">requestWithMethod:url:parameters:parameterEncoding:</a></span></li>
@@ -141,8 +144,8 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					
 					
@@ -158,51 +161,48 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/lfEnvironment">&nbsp;&nbsp;lfEnvironment</a></code>
-		<span class="tooltip"><p>  @property lfEnvironment Environment with which this class instance was initialized</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/lfNetwork">&nbsp;&nbsp;lfNetwork</a></code>
-		<span class="tooltip"><p>@property lfNetwork Network with which this class instance was initialized</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/subdomain">&nbsp;&nbsp;subdomain</a></code>
-		<span class="tooltip"><p>@property subdomain abstract (to be overriden) subdomain of the baseURL</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/clientWithNetwork:environment:">+&nbsp;clientWithNetwork:environment:</a></code>
-		<span class="tooltip"><p>Initialize Livefyre client</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithNetwork:environment:">&ndash;&nbsp;initWithNetwork:environment:</a></code>
-		<span class="tooltip"><p>Initialize Livefyre client</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postPath:parameters:parameterEncoding:success:failure:">&ndash;&nbsp;postPath:parameters:parameterEncoding:success:failure:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/postURL:parameters:parameterEncoding:success:failure:">&ndash;&nbsp;postURL:parameters:parameterEncoding:success:failure:</a></code>
-		<span class="tooltip"><p>Creates an <a href="../Classes/LFSJSONRequestOperation.html"><code>LFSJSONRequestOperation</code></a> with a <code>POST</code> request, and enqueues it to the HTTP client&rsquo;s operation queue.
-Let developer specify the particular parameter encoding to use.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/requestWithMethod:url:parameters:parameterEncoding:">&ndash;&nbsp;requestWithMethod:url:parameters:parameterEncoding:</a></code>
-		<span class="tooltip"><p>Creates an <code>NSMutableURLRequest</code> object with the specified HTTP method and path.
-Let developer specify the particular parameter encoding to use.</p></span>
 	</span>
 	
 	
@@ -402,6 +402,15 @@ Used for development/testing purposes.</p></dd>
 	
 	
 	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/initWithNetwork:environment:">- initWithNetwork:environment:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
 	
 	
 	<div class="method-subsection declared-in-section">
@@ -466,6 +475,79 @@ Used for development/testing purposes.</p></dd>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Initialize Livefyre client</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LFSBaseClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postPath:parameters:parameterEncoding:success:failure:" title="postPath:parameters:parameterEncoding:success:failure:"></a>
+	<h3 class="subsubtitle method-title">postPath:parameters:parameterEncoding:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an <a href="../Classes/LFSJSONRequestOperation.html"><code>LFSJSONRequestOperation</code></a> with a <code>POST</code> request, and enqueues it to the HTTP client&rsquo;s operation queue.
+Let developer specify the particular parameter encoding to use.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>parameters</em> parameterEncoding:(AFHTTPClientParameterEncoding)<em>parameterEncoding</em> success:(AFSuccessBlock)<em>success</em> failure:(AFFailureBlock)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>relative path</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parameters</em></dt>
+			<dd><p>The parameters to be encoded and set in the request HTTP body.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parameterEncoding</em></dt>
+			<dd><p>The <code>AFHTTPClientParameterEncoding</code> value corresponding to how parameters are encoded into a request body</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block object to be executed when the request operation finishes successfully. This block has no return value and takes two arguments: the created request operation and the object created from the response data of request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes two arguments: the created request operation and the <code>NSError</code> object describing the network or parsing error that occurred.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates an <a href="../Classes/LFSJSONRequestOperation.html"><code>LFSJSONRequestOperation</code></a> with a <code>POST</code> request, and enqueues it to the HTTP client&rsquo;s operation queue.
+Let developer specify the particular parameter encoding to use.</p>
 	</div>
 	
 	
@@ -633,6 +715,8 @@ Let developer specify the particular parameter encoding to use.</p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -643,9 +727,9 @@ Let developer specify the particular parameter encoding to use.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Livefyre. All rights reserved. (Last updated: 2013-09-23)</span><br />
+						<p><span class="copyright">&copy; 2013 Livefyre. All rights reserved. (Last updated: 2013-10-24)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.6 (build 789)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
