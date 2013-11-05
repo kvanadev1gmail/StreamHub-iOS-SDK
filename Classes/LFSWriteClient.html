@@ -1,0 +1,725 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>LFSWriteClient Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">StreamHub-iOS-SDK </a></h1>
+				<a id="developerHome" href="../index.html">Livefyre</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">LFSWriteClient Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:</option>
+	
+	<option value="//api/name/postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:</option>
+	
+	<option value="//api/name/postContentType:forCollection:parameters:onSuccess:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- postContentType:forCollection:parameters:onSuccess:onFailure:</option>
+	
+	<option value="//api/name/postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:</option>
+	
+	<option value="//api/name/postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Content Interaction">Content Interaction</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:">postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:">postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postContentType:forCollection:parameters:onSuccess:onFailure:">postContentType:forCollection:parameters:onSuccess:onFailure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:">postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:">postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="LFSWriteClient Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">LFSWriteClient Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/LFSBaseClient.html">LFSBaseClient</a> : AFHTTPClient</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">LFSWriteClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Content Interaction" name="task_Content Interaction"></a>
+						
+<h3 class="subsubtitle task-title">Content Interaction</h3>
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:">&ndash;&nbsp;postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:">&ndash;&nbsp;postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:">&ndash;&nbsp;postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postContentType:forCollection:parameters:onSuccess:onFailure:">&ndash;&nbsp;postContentType:forCollection:parameters:onSuccess:onFailure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:">&ndash;&nbsp;postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:" title="postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:"></a>
+	<h3 class="subsubtitle method-title">postArticleForSite:withSiteKey:collectionMeta:onSuccess:onFailure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a collection on the given site.
+Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postArticleForSite:(NSString *)<em>siteId</em> withSiteKey:(NSString *)<em>siteKey</em> collectionMeta:(NSDictionary *)<em>collectionMeta</em> onSuccess:(LFSSuccessBlock)<em>success</em> onFailure:(LFSFailureBlock)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>siteId</em></dt>
+			<dd><p>site Id</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>siteKey</em></dt>
+			<dd><p>(optional) Site Key to sign JWT token with
+If nil, so-called &ldquo;unsigned collection creation&rdquo; will take place</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collectionMeta</em></dt>
+			<dd><p>A dictionary containing the following parameters:</p>
+
+<p><code>LFSCollectionMetaArticleIdKey</code> (required) A string (&lt;=255 characters) representing user-assigned article id</p>
+
+<p><code>LFSCollectionMetaURLKey</code>       (required) A string representing user-assigned URL article URL. Note: a pair consisting of siteId and articleId correponds to a collection entity.</p>
+
+<p><code>LFSCollectionMetaTitleKey</code>     (required for signed collections) A string (&lt;=255 characters) representing article title</p>
+
+<p><code>LFSCollectionMetaTagsKey</code>      (optional) An array of user-assigned tags</p>
+
+<p><code>LFSCollectionMetaTypeKey</code> (optional) A type of stream to be created. One of the following: <code>LFSStreamTypeThreaded | LFSStreamTypeLiveComments | LFSStreamTypeLiveChat | LFSStreamTypeLiveBlog | LFSStreamTypeReviews | LFSStreamTypeLiveReviews | LFSStreamTypeRatings | LFSStreamTypeStory | LFSStreamTypeCounting</code></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Success callback</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Failure callback</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a collection on the given site.
+Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LFSWriteClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:" title="postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:"></a>
+	<h3 class="subsubtitle method-title">postContent:inCollection:userToken:inReplyTo:onSuccess:onFailure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience method to create a new comment in a collection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postContent:(NSString *)<em>body</em> inCollection:(NSString *)<em>collectionId</em> userToken:(NSString *)<em>userToken</em> inReplyTo:(NSString *)<em>parentId</em> onSuccess:(LFSSuccessBlock)<em>success</em> onFailure:(LFSFailureBlock)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>body</em></dt>
+			<dd><p>HTML body of the new post.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collectionId</em></dt>
+			<dd><p>Collection to add the post to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userToken</em></dt>
+			<dd><p>JWT-encoded user token</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parentId</em></dt>
+			<dd><p>(optional) The post that this is a response to, if applicable.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Success callback</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Failure callback</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Convenience method to create a new comment in a collection.</p>
+
+<p>Creating new posts requires that the user has permission to post in the collection.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LFSWriteClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postContentType:forCollection:parameters:onSuccess:onFailure:" title="postContentType:forCollection:parameters:onSuccess:onFailure:"></a>
+	<h3 class="subsubtitle method-title">postContentType:forCollection:parameters:onSuccess:onFailure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Post new content (comments, reviews, tweets, etc) to a collection</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postContentType:(LFSPostType)<em>postType</em> forCollection:(NSString *)<em>collectionId</em> parameters:(NSDictionary *)<em>parameters</em> onSuccess:(LFSSuccessBlock)<em>success</em> onFailure:(LFSFailureBlock)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postType</em></dt>
+			<dd><p>One of the following:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collectionId</em></dt>
+			<dd><p>Collection to add the post to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parameters</em></dt>
+			<dd><p>A dictionary containing the following:</p>
+
+<p><code>LFSCollectionPostBodyKey</code>        (required) HTML body</p>
+
+<p><code>LFSCollectionPostUserTokenKey</code>   (required) user token</p>
+
+<p><code>LFSCollectionPostTitleKey</code>       (required for LiveReviews only)</p>
+
+<p><code>LFSCollectionPostRatingKey</code>      (required for LiveReviews only)</p>
+
+<p><code>FSCollectionPostParentIdKey</code>     parent content id (for threaded content)</p>
+
+<p><code>LFSCollectionPostMIMETypeKey</code>    MIME type</p>
+
+<p><code>LFSCollectionPostShareTypesKey</code>  share types</p>
+
+<p><code>LFSCollectionPostAttachmentsKey</code> attachment</p>
+
+<p><code>LFSCollectionPostMediaKey</code>       media</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Success callback</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Failure callback</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Post new content (comments, reviews, tweets, etc) to a collection</p>
+
+<p>Creating new posts requires that the user has permission to post in the collection.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LFSWriteClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:" title="postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:"></a>
+	<h3 class="subsubtitle method-title">postFlag:forContent:inCollection:userToken:parameters:onSuccess:onFailure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag content with one of the flag types.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postFlag:(LFSContentFlag)<em>flag</em> forContent:(NSString *)<em>contentId</em> inCollection:(NSString *)<em>collectionId</em> userToken:(NSString *)<em>userToken</em> parameters:(NSDictionary *)<em>parameters</em> onSuccess:(LFSSuccessBlock)<em>success</em> onFailure:(LFSFailureBlock)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>flag</em></dt>
+			<dd><p>Either one of the following: <code>LFSFlagSpam | LFSFlagOffensive | LFSFlagDisagree | LFSFlagOfftopic</code></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentId</em></dt>
+			<dd><p>The is of the content to flag.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collectionId</em></dt>
+			<dd><p>The Id of the collection where the content appears.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userToken</em></dt>
+			<dd><p>JWT-encoded user token</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parameters</em></dt>
+			<dd><p>A dictionary containing the following parameters:</p>
+
+<p><code>@"notes"</code>   (optional) Any additional comment the user provided.</p>
+
+<p><code>@"email"</code>   (optional) The email of the user.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Success callback</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Failure callback</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Flag content with one of the flag types.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LFSWriteClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:" title="postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:"></a>
+	<h3 class="subsubtitle method-title">postMessage:forContent:inCollection:userToken:parameters:onSuccess:onFailure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Like (or unlike) a comment in a collection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postMessage:(LFSMessageAction)<em>action</em> forContent:(NSString *)<em>contentId</em> inCollection:(NSString *)<em>collectionId</em> userToken:(NSString *)<em>userToken</em> parameters:(NSDictionary *)<em>parameters</em> onSuccess:(LFSSuccessBlock)<em>success</em> onFailure:(LFSFailureBlock)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>action</em></dt>
+			<dd><p>One of the following: LFSOpineLike, LFSOpineUnlike</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentId</em></dt>
+			<dd><p>id of content which is being liked/unliked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collectionId</em></dt>
+			<dd><p>The collection in which the content appears.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userToken</em></dt>
+			<dd><p>JWT-encoded user token</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parameters</em></dt>
+			<dd><p>(Optional) A dictionary containing the following parameters:</p>
+
+<p><code>@"notes"</code>   (optional) Any additional comment the user provided.</p>
+
+<p><code>@"email"</code>   (optional) The email of the user.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Success callback</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Failure callback</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Like (or unlike) a comment in a collection.</p>
+
+<p>The comment must be in a collection the user is authenticated for and it must have been posted by a
+different user. Trying to like things other than comments may have odd results.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LFSWriteClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Livefyre. All rights reserved. (Last updated: 2013-11-05)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
