@@ -1,54 +1,97 @@
 StreamHub-iOS-SDK
 =================
 
-Use this open-source library to integrate Livefyre services into your native iOS app.
-This SDK provides an AFNetworking-compatible layer for common API mechanisms.
+Use this open-source library to integrate Livefyre services into your native iOS app.  This SDK provides a thin layer for common API mechanisms and endpoints on top of the excellent AFNetworking stack.
 
-Also see the sample app project at https://github.com/Livefyre/StreamHub-iOS-Example-App
-For information about the Livefyre API, visit https://github.com/Livefyre/livefyre-docs/wiki/StreamHub-API-Reference
+For more information, please see the CommentStream sample app [[1]] or Livefyre HTTP API documentation [[2]].
 
-# Getting Started
+## Getting Started
 
-## Installation: Cocoa Pods
+If you just want to download the SDK and take a look at the sample app(s),
+follow these steps:
 
-The easiest way to add StreamHub SDK to your project is to use CocoaPods (if you aren't
-using CocoaPods already, you should!). StreamHub SDK does not yet have a spec on CocoaPods.org, 
-so for now just specify Github repository when adding it to your pods. An example Podfile:
+    cd ~/dev
+    git clone https://github.com/Livefyre/StreamHub-iOS-SDK.git
+    cd StreamHub-iOS-SDK
+    git submodule init
+    git submodule update
+    pod repo add escherba git@github.com:escherba/Specs.git
+    pod install
+    cd examples/CommentStream
+    pod install
+    open CommentStream.xcworkspace
+
+## Integrating the SDK into your project
+
+### As a Cocoa Pod (recommended)
+
+The most convenient way to add StreamHub-iOS SDK to your project is to use CocoaPods. Here is an example Podfile:
 
     platform :ios, :deployment_target => '6.0'
 
-    pod 'StreamHub-iOS-SDK', :git => 'https://github.com/Livefyre/StreamHub-iOS-SDK', :commit => '73642375688f1300a6f66021f5e0448cbabd09fe'
+    pod 'StreamHub-iOS-SDK', '~> 0.3.0'
 
-Once your Podfile is placed in your app project root, simply run:
+You will also need to add a Specs repository to your CocoaPod installation (this will clone it to `~/.cocoapods/repos` directory):
+
+    pod repo add escherba git@github.com:escherba/Specs.git
+
+Once your Podfile is created in your app project root and the repository above added, run:
 
     pod install
 
-This will download all the dependencies and create a file called `MyApp.xcworkspace` which you should
-use to open your app project in Xcode in the future.
+This will download all the dependencies and create a file `MyApp.xcworkspace`, which you should use from now on to open your app project in Xcode.
 
-## Installation: Subproject
+### As an Xcode subproject
 
 Alternatively, clone the repository:
 
     git clone https://github.com/Livefyre/StreamHub-iOS-SDK.git
 
-And then add the Xcode project (LFSClient.xcodeproj) to your app as a subproject (easily done 
-by simply dragging the LFSClient.xcodeproj file into Project Navigator pane in Xcode).
+Next, add the Xcode project (LFSClient.xcodeproj) to your app as a subproject (easily done by simply dragging the LFSClient.xcodeproj file into Project Navigator pane in Xcode).
+
+You will also need to do the same with any of the dependencies (AFNetworking [[3]], JSONKit [[4]]).
 
 ## Xcode Documentation
 
-You can browse the documentation online at http://livefyre.github.com/StreamHub-iOS-SDK/ or you
-can build the "Documentation" target in your Xcode (requires `appledoc` to be installed) on your
-system.
+You can browse the documentation online [[5]] or you can build the "Documentation" target in your Xcode (requires `appledoc` to be installed) on your system.
 
-# Requirements
+## Requirements
 
-At present, StreamHub-SDK v0.2.0 requires iOS 6.0 (mostly due to external dependencies). If you
-would like to use this SDK with iOS versions prior to 6.0, please contact Livefyre and we'll 
-be happy to help.
+StreamHub iOS SDK versions since v0.2.0 require iOS 6.0 or higher.
 
-# License
+## Appendix (JSON support)
 
-Copyright (C) 2013 Livefyre
+For those looking at StreamHub-iOS SDK internals, please note that we use a modified version of JSONKit [[4]] as the default JSON parser (instead of Apple-provided NSJSONSerialization). We had to do this because the Apple-provided parser does not support decoding JSON files that contain integers or floating point numbers that are larger than those that can be represented by the system. Our modified version of JSONKit truncates very large numbers to corresponding system maximum, instead of throwing an exception.
 
-Distributed under the MIT License.
+## License
+
+This software is licensed under the MIT License.
+
+The MIT License (MIT)
+
+Copyright (c) 2013 Livefyre
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+[1]: https://github.com/Livefyre/StreamHub-iOS-Example-App
+[2]: http://answers.livefyre.com/developers/reference/http-reference/
+[3]: https://github.com/mattt/AFNetworking
+[4]: https://github.com/escherba/JSONKit
+[5]: http://livefyre.github.com/StreamHub-iOS-SDK/
