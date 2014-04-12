@@ -206,8 +206,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Create a collection on the given site.
-Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
+		<p>Create a collection on the given site.</p>
 	</div>		
 	
     
@@ -227,22 +226,23 @@ Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
 		<dl class="argument-def parameter-def">
 			<dt><em>siteKey</em></dt>
 			<dd><p>(optional) Site Key to sign JWT token with
-If nil, so-called &ldquo;unsigned collection creation&rdquo; will take place</p></dd>
+                  If nil, so-called &ldquo;unsigned collection creation&rdquo; will take place</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>collectionMeta</em></dt>
 			<dd><p>A dictionary containing the following parameters:</p>
 
-<p><code>LFSCollectionMetaArticleIdKey</code> (required) A string (&lt;=255 characters) representing user-assigned article id</p>
+<pre><code>     `LFSCollectionMetaArticleIdKey` (required) A string (&lt;=255 characters) representing user-assigned article id
 
-<p><code>LFSCollectionMetaURLKey</code>       (required) A string representing user-assigned URL article URL. Note: a pair consisting of siteId and articleId correponds to a collection entity.</p>
+     `LFSCollectionMetaURLKey`       (required) A string representing user-assigned URL article URL. Note: a pair consisting of siteId and articleId correponds to a collection entity.
 
-<p><code>LFSCollectionMetaTitleKey</code>     (required for signed collections) A string (&lt;=255 characters) representing article title</p>
+     `LFSCollectionMetaTitleKey`     (required for signed collections) A string (&lt;=255 characters) representing article title
 
-<p><code>LFSCollectionMetaTagsKey</code>      (optional) An array of user-assigned tags</p>
+     `LFSCollectionMetaTagsKey`      (optional) An array of user-assigned tags
 
-<p><code>LFSCollectionMetaTypeKey</code> (optional) A type of stream to be created. One of the following: <code>LFSStreamTypeThreaded | LFSStreamTypeLiveComments | LFSStreamTypeLiveChat | LFSStreamTypeLiveBlog | LFSStreamTypeReviews | LFSStreamTypeLiveReviews | LFSStreamTypeRatings | LFSStreamTypeStory | LFSStreamTypeCounting</code></p></dd>
+     `LFSCollectionMetaTypeKey` (optional) A type of stream to be created. One of the following: `LFSStreamTypeThreaded | LFSStreamTypeLiveComments | LFSStreamTypeLiveChat | LFSStreamTypeLiveBlog | LFSStreamTypeReviews | LFSStreamTypeLiveReviews | LFSStreamTypeRatings | LFSStreamTypeStory | LFSStreamTypeCounting`
+</code></pre></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -266,7 +266,7 @@ If nil, so-called &ldquo;unsigned collection creation&rdquo; will take place</p>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Create a collection on the given site.
-Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
+  Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
 	</div>
 	
 	
@@ -342,9 +342,8 @@ Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Convenience method to create a new comment in a collection.</p>
-
-<p>Creating new posts requires that the user has permission to post in the collection.</p>
+		<p>Convenience method to create a new comment in a collection.
+   Creating new posts requires that the user has permission to post in the collection.</p>
 	</div>
 	
 	
@@ -394,23 +393,24 @@ Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
 			<dt><em>parameters</em></dt>
 			<dd><p>A dictionary containing the following:</p>
 
-<p><code>LFSCollectionPostBodyKey</code>        (required) HTML body</p>
+<pre><code>     `LFSCollectionPostBodyKey`        (required) HTML body
 
-<p><code>LFSCollectionPostUserTokenKey</code>   (required) user token</p>
+     `LFSCollectionPostUserTokenKey`   (required) user token
 
-<p><code>LFSCollectionPostTitleKey</code>       (required for LiveReviews only)</p>
+     `LFSCollectionPostTitleKey`       (required for LiveReviews only)
 
-<p><code>LFSCollectionPostRatingKey</code>      (required for LiveReviews only)</p>
+     `LFSCollectionPostRatingKey`      (required for LiveReviews only)
 
-<p><code>FSCollectionPostParentIdKey</code>     parent content id (for threaded content)</p>
+     `FSCollectionPostParentIdKey`     parent content id (for threaded content)
 
-<p><code>LFSCollectionPostMIMETypeKey</code>    MIME type</p>
+     `LFSCollectionPostMIMETypeKey`    MIME type
 
-<p><code>LFSCollectionPostShareTypesKey</code>  share types</p>
+     `LFSCollectionPostShareTypesKey`  share types
 
-<p><code>LFSCollectionPostAttachmentsKey</code> attachment</p>
+     `LFSCollectionPostAttachmentsKey` attachment
 
-<p><code>LFSCollectionPostMediaKey</code>       media</p></dd>
+     `LFSCollectionPostMediaKey`       media
+</code></pre></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -433,9 +433,8 @@ Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Post new content (comments, reviews, tweets, etc) to a collection</p>
-
-<p>Creating new posts requires that the user has permission to post in the collection.</p>
+		<p>Post new content (comments, reviews, tweets, etc) to a collection.
+  Creating new posts requires that the user has permission to post in the collection.</p>
 	</div>
 	
 	
@@ -495,9 +494,10 @@ Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
 			<dt><em>parameters</em></dt>
 			<dd><p>A dictionary containing the following parameters:</p>
 
-<p><code>@"notes"</code>   (optional) Any additional comment the user provided.</p>
+<pre><code>    `@"notes"`   (optional) Any additional comment the user provided.
 
-<p><code>@"email"</code>   (optional) The email of the user.</p></dd>
+    `@"email"`   (optional) The email of the user.
+</code></pre></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -580,9 +580,10 @@ Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
 			<dt><em>parameters</em></dt>
 			<dd><p>(Optional) A dictionary containing the following parameters:</p>
 
-<p><code>@"notes"</code>   (optional) Any additional comment the user provided.</p>
+<pre><code>     `@"notes"`   (optional) Any additional comment the user provided.
 
-<p><code>@"email"</code>   (optional) The email of the user.</p></dd>
+     `@"email"`   (optional) The email of the user.
+</code></pre></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -605,10 +606,7 @@ Note: to create an unsigned collection, pass nil as the siteKey parameter</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Like (or unlike) a comment in a collection.</p>
-
-<p>The comment must be in a collection the user is authenticated for and it must have been posted by a
-different user. Trying to like things other than comments may have odd results.</p>
+		<p>Like (or unlike) a comment in a collection. The comment must be in a collection the user is authenticated for and it must have been posted by a different user. Trying to like things other than comments may have odd results.</p>
 	</div>
 	
 	
@@ -681,7 +679,7 @@ different user. Trying to like things other than comments may have odd results.<
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Livefyre. All rights reserved. (Last updated: 2014-04-09)</span><br />
+						<p><span class="copyright">&copy; 2014 Livefyre. All rights reserved. (Last updated: 2014-04-11)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
