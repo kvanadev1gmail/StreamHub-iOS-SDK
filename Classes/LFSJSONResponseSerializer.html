@@ -37,6 +37,8 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/decoder">&nbsp;&nbsp;&nbsp;&nbsp;decoder</option>
+	
 	<option value="//api/name/readingOptions">&nbsp;&nbsp;&nbsp;&nbsp;readingOptions</option>
 	
 	
@@ -47,6 +49,15 @@
 	<option value="//api/name/serializerWithReadingOptions:">&nbsp;&nbsp;&nbsp;&nbsp;+ serializerWithReadingOptions:</option>
 	
 	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/getErrorFromObject:">&nbsp;&nbsp;&nbsp;&nbsp;- getErrorFromObject:</option>
+	
+	<option value="//api/name/initWithReadingOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithReadingOptions:</option>
+	
+	<option value="//api/name/responseObjectForResponse:data:error:">&nbsp;&nbsp;&nbsp;&nbsp;- responseObjectForResponse:data:error:</option>
 	
 	
 	
@@ -62,6 +73,8 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
 </ul></li>
 
 
@@ -69,6 +82,8 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/decoder">decoder</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readingOptions">readingOptions</a></span></li>
 	
@@ -83,6 +98,16 @@
 </ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getErrorFromObject:">getErrorFromObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithReadingOptions:">initWithReadingOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseObjectForResponse:data:error:">responseObjectForResponse:data:error:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -124,7 +149,7 @@
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -139,6 +164,46 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithReadingOptions:">&ndash;&nbsp;initWithReadingOptions:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseObjectForResponse:data:error:">&ndash;&nbsp;responseObjectForResponse:data:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getErrorFromObject:">&ndash;&nbsp;getErrorFromObject:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/decoder">&nbsp;&nbsp;decoder</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
 </li>
 						</ul>
 						
@@ -151,6 +216,17 @@
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/decoder" title="decoder"></a>
+	<h3 class="subsubtitle method-title">decoder</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JSONDecoder *decoder</code></div>
+
+    
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/readingOptions" title="readingOptions"></a>
@@ -255,6 +331,90 @@
 					</div>
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getErrorFromObject:" title="getErrorFromObject:"></a>
+	<h3 class="subsubtitle method-title">getErrorFromObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSError *)getErrorFromObject:(NSDictionary *)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithReadingOptions:" title="initWithReadingOptions:"></a>
+	<h3 class="subsubtitle method-title">initWithReadingOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a JSON serializer with specified reading and writing options.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithReadingOptions:(JKFlags)<em>jkflags</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>readingOptions</em></dt>
+			<dd><p>The specified JSON reading flags.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>LFSJSONResponseSerializer instance</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a JSON serializer with specified reading and writing options.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LFSJSONResponseSerializer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseObjectForResponse:data:error:" title="responseObjectForResponse:data:error:"></a>
+	<h3 class="subsubtitle method-title">responseObjectForResponse:data:error:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)responseObjectForResponse:(NSURLResponse *)<em>response</em> data:(NSData *)<em>data</em> error:(NSError **)<em>error</em></code></div>
+
+    
+</div>
+						
+					</div>
 					
 					
                     
