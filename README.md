@@ -58,6 +58,11 @@ You will also need `LFSTestConfig.plist` file from Livefyre which we will provid
 
 You can browse the documentation online [[6]] or you can build the "Documentation" target in your Xcode (requires `appledoc` to be installed) on your system.
 
+## Requirements
+
+StreamHub iOS SDK versions since v0.2.0 require iOS 6.0 or higher.
+
+
 ## Integrating the SDK into swift project
 
 ### As a Cocoa Pod (recommended)
@@ -98,10 +103,10 @@ import the StreamHub_iOS_SDK module in which to use the SDK code.
     Example: import StreamHub_iOS_SDK    
 ```
 
+## Requirements for swift project
 
-## Requirements
+StreamHub iOS SDK versions since v0.2.0 require iOS 8.0 or higher.
 
-StreamHub iOS SDK versions since v0.2.0 require iOS 6.0 or higher.
 
 ## Appendix (JSON support)
 
