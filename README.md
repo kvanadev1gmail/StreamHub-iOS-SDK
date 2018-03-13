@@ -90,7 +90,7 @@ pod 'StreamHub-iOS-SDK', :git => 'https://github.com/Livefyre/StreamHub-iOS-SDK.
 
 Then simply:
 
-pod install
+    pod install
 
 This will download all the dependencies and create a file `MyApp.xcworkspace`, which you should use from now on to open your app project in Xcode. Note running `pod install` will clone `Livefyre/cocoapods.git` repo to `~/.cocoapods/repos/livefyre` directory.
 
