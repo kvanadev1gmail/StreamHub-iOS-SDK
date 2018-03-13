@@ -19,7 +19,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, :deployment_target => '6.0'
 
-pod 'StreamHub-iOS-SDK', '~> 0.3.0'
+pod 'StreamHub-iOS-SDK', :git => 'https://github.com/Livefyre/StreamHub-iOS-SDK.git'
 ```
 
 Then simply:
@@ -57,6 +57,47 @@ You will also need `LFSTestConfig.plist` file from Livefyre which we will provid
 ## Xcode Documentation
 
 You can browse the documentation online [[6]] or you can build the "Documentation" target in your Xcode (requires `appledoc` to be installed) on your system.
+
+## Integrating the SDK into swift project
+
+### As a Cocoa Pod (recommended)
+
+1. Create the new swift 3 app.
+2. Go to the project through terminal using the command(cd <projectname>).
+
+The most convenient way to add StreamHub-iOS SDK to your project is to use CocoaPods.
+
+1. Create the pod file. (in terminal in the newly created directory) 
+
+If you don't have CocoaPods, run `gem install cocoapods` and `pod setup`.
+a. pod init
+
+Here is an example Podfile:
+
+```ruby
+source 'https://github.com/Livefyre/cocoapods.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, :deployment_target => '8.0'
+
+pod 'StreamHub-iOS-SDK', :git => 'https://github.com/Livefyre/StreamHub-iOS-SDK.git'
+```
+
+Then simply:
+
+pod install
+
+This will download all the dependencies and create a file `MyApp.xcworkspace`, which you should use from now on to open your app project in Xcode. Note running `pod install` will clone `Livefyre/cocoapods.git` repo to `~/.cocoapods/repos/livefyre` directory.
+
+## Get SDK Methods into swift app
+```ruby
+Create Bridging-Header file for importing objective-c files.
+import the framework into Swift Brdging file. The naming convention has changed to use _(underscore) instead of -(dash)  
+    Example: (#import<StreamHub_iOS_SDK/LFSClient.h>)
+import the StreamHub_iOS_SDK module in which to use the SDK code.
+    Example: import StreamHub_iOS_SDK    
+```
+
 
 ## Requirements
 
